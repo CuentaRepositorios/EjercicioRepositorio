@@ -9,6 +9,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
+import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class Almacen {
@@ -351,6 +352,27 @@ Suponiendo que sólo hay 3 categorías de productos (Accesorios, Pantallas y Pcs) 
 	 *
 	 *
 	 */
+		
 
+	/* AÑADIMOS LA NUEVA FUNCIÓN AL CÓDIGO PARA EL APARTADO 7*/
+	
+	int edad;
+	{
+	Scanner teclado = new Scanner(System.in);
+
+	System.out.print("Escribe tu edad: ");
+	edad = teclado.nextInt();
+
+	if (edad >= 18) {
+		System.out.println("Eres mayor de edad");
+	}
+
+	teclado.close();
 
 }
+
+}
+	
+	
+	
+
