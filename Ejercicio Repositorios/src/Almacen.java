@@ -17,7 +17,7 @@ public class Almacen {
 	Producto productos[];
 	String Localidad;
 	int codPostal;
-
+	//COMENTADO POR ADRIAN JOYA PARA EL EJERCICIO DE GITHUB, DE DANIEL BENITEZ ES EL CODIGO
 	//ESTA ES LA TERCERA VERSION DEL CODIGO PARA EL APARTADO 4 DEL EJERCICIO
 	
 	public static int NUM_PRODUCTOS = 200;
@@ -57,7 +57,7 @@ public class Almacen {
 					linea = linea.concat(" ");
 					linea = linea.concat(productos[i].getDescripcion());
 					linea = linea.concat(" ");
-					// Necesitamos convertir la cantidad de int a String ya que concat sÃ³lo admite
+					// Necesitamos convertir la cantidad de int a String ya que concat sÃƒÂ³lo admite
 					// String
 					linea = linea.concat(Integer.toString(productos[i].getCantidad()));
 					linea = linea.concat(" ");
@@ -65,7 +65,7 @@ public class Almacen {
 					linea = linea.concat(" ");
 					linea = linea.concat(Integer.toString(productos[i].getCategoria().id));
 
-					// Si estamos leyendo el Ãºltimo producto del array no pasamos escribimos linea
+					// Si estamos leyendo el ÃƒÂºltimo producto del array no pasamos escribimos linea
 					// en blanco
 					if (i != this.productos.length - 1)
 						out.println(linea);
@@ -144,7 +144,7 @@ public class Almacen {
 	}
 
 	/**
-	 * La funciÃ³n general un numero de productos aleatorios y los devuelve en un
+	 * La funciÃƒÂ³n general un numero de productos aleatorios y los devuelve en un
 	 * array de Producto
 	 *
 	 * @param cantidad Cantidad de productos a generar
@@ -173,7 +173,7 @@ public class Almacen {
 	}
 
 	/**
-	 * Funcion que devuelve la suma de los precios de todos los Ã§ productos que se
+	 * Funcion que devuelve la suma de los precios de todos los ÃƒÂ§ productos que se
 	 * les pasen
 	 */
 	public double calcularPrecios(Producto prod[]) {
@@ -196,12 +196,12 @@ public class Almacen {
 
 	}
 	/*
-	 * Crear el método  void estadísticas() en la clase Almacen de PcTrunk. Este método convertirá el array de
-	 *  productos en un ArrayList y mostrará por pantalla las siguientes estadísticas. El bucle se debe recorrer
-	 *   sólo una vez y se debe de utilizar un iterator.
+	 * Crear el mÃ©todo  void estadÃ­sticas() en la clase Almacen de PcTrunk. Este mÃ©todo convertirÃ¡ el array de
+	 *  productos en un ArrayList y mostrarÃ¡ por pantalla las siguientes estadÃ­sticas. El bucle se debe recorrer
+	 *   sÃ³lo una vez y se debe de utilizar un iterator.
 
-Precio Medio, máximo y mínimo, sacando los nombres de los productos para el máximo y mínimo
-Suponiendo que sólo hay 3 categorías de productos (Accesorios, Pantallas y Pcs) Mostrar el porcentaje de productos de cada categoría.
+Precio Medio, mÃ¡ximo y mÃ­nimo, sacando los nombres de los productos para el mÃ¡ximo y mÃ­nimo
+Suponiendo que sÃ³lo hay 3 categorÃ­as de productos (Accesorios, Pantallas y Pcs) Mostrar el porcentaje de productos de cada categorÃ­a.
 
 	 */
 
@@ -277,9 +277,9 @@ Suponiendo que sólo hay 3 categorías de productos (Accesorios, Pantallas y Pcs) 
 	}
 
 	/*
-	 * Crear el método int eliminarProducto(int posicion) que elimina un producto situado en esa posición,
-	 *  se convertirá a arraylist y se utilizará remove para eliminar la posición. Se tiene que controlar
-	 *  la excepción que lanza remove y mostrar un mensaje en caso de que sea lanzada.
+	 * Crear el mÃ©todo int eliminarProducto(int posicion) que elimina un producto situado en esa posiciÃ³n,
+	 *  se convertirÃ¡ a arraylist y se utilizarÃ¡ remove para eliminar la posiciÃ³n. Se tiene que controlar
+	 *  la excepciÃ³n que lanza remove y mostrar un mensaje en caso de que sea lanzada.
 	 */
 
 	public int eliminarProducto(int posicion)
@@ -300,8 +300,8 @@ Suponiendo que sólo hay 3 categorías de productos (Accesorios, Pantallas y Pcs) 
 	}
 
 	/*
-	 * Crear el método int buscar(Producto prod) que devuelve la posición del producto si
-	 *  el producto está en el Almacén y -1 en caso contrario. Utilizar un Vector
+	 * Crear el mÃ©todo int buscar(Producto prod) que devuelve la posiciÃ³n del producto si
+	 *  el producto estÃ¡ en el AlmacÃ©n y -1 en caso contrario. Utilizar un Vector
 	 */
 
 	public Producto[] getProductos() {
@@ -326,8 +326,8 @@ Suponiendo que sólo hay 3 categorías de productos (Accesorios, Pantallas y Pcs) 
 	}
 
 	/*
-	 * Crear el método Producto[] ordenar(), que devuelve el array ordenado por el nombre del producto.
-	 *  No funciona directamente con Collection.sort(..), primero hay que investigar el apartado 11.1 de la teoría.
+	 * Crear el mÃ©todo Producto[] ordenar(), que devuelve el array ordenado por el nombre del producto.
+	 *  No funciona directamente con Collection.sort(..), primero hay que investigar el apartado 11.1 de la teorÃ­a.
 	 */
 
 	public void ordenar(Producto[] productos)
@@ -346,15 +346,15 @@ Suponiendo que sólo hay 3 categorías de productos (Accesorios, Pantallas y Pcs) 
 
 	/*
 	 *
-	 * Vector es una matriz dinámica segura para subprocesos proporcionada por Java en los primeros días;
-	 *  ArrayList también es una matriz dinámica, pero no segura para subprocesos; LinkedList es diferente
+	 * Vector es una matriz dinÃ¡mica segura para subprocesos proporcionada por Java en los primeros dÃ­as;
+	 *  ArrayList tambiÃ©n es una matriz dinÃ¡mica, pero no segura para subprocesos; LinkedList es diferente
 	 *   de la anterior. LinkedList se almacena usando una lista doblemente vinculada y no es segura para subprocesos.
 	 *
 	 *
 	 */
 		
 
-	/* AÑADIMOS LA NUEVA FUNCIÓN AL CÓDIGO PARA EL APARTADO 7*/
+	/* AÃ‘ADIMOS LA NUEVA FUNCIÃ“N AL CÃ“DIGO PARA EL APARTADO 7*/
 	
 	int edad;
 	{
@@ -372,7 +372,5 @@ Suponiendo que sólo hay 3 categorías de productos (Accesorios, Pantallas y Pcs) 
 }
 
 }
-	
-	
 	
 
