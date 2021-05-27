@@ -17,9 +17,9 @@ public class Almacen {
 	String Localidad;
 	int codPostal;
 
-	//ESTA ES LA SEGUNDA VERSION DEL CODIGO PARA EL APARTADO 4 DEL EJERCICIO
+	//ESTA ES LA TERCERA VERSION DEL CODIGO PARA EL APARTADO 4 DEL EJERCICIO
 	
-	public static int NUM_PRODUCTOS = 5;
+	public static int NUM_PRODUCTOS = 200;
 	public final String RUTA_FICHERO = "G:\\ficheros\\productos.txt";
 
 	public Almacen() {
