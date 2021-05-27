@@ -24,7 +24,7 @@
 		//TRABAJO DE DANIEL BENITezd
 		//:DD
 		// ESTA ES LA TERCERA VERSION DEL CODIGO PARA EL APARTADO 4 DEL EJERCICIO
-		
+		d
 		public  final  String  RUTA_FICHERO  =  " G: \\ ficheros \\ productos.txt " ;
 
 		 Almacén público () {
